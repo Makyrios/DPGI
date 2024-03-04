@@ -5,32 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lr2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="594">
-    <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="410">
-        <Label Content="Label" HorizontalAlignment="Left"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
-        <Label Content="Label" HorizontalAlignment="Center"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
-        <Button Content="Button" Margin="170,20,0,0">
+        Title="MainWindow" Height="189" Width="432">
+    <DockPanel VerticalAlignment="Center">
+        <Label Content="Label" Width="38" DockPanel.Dock="Top"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White" Width="170" Height="150"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White" DockPanel.Dock="Right" Width="170" Height="150"/>
+        <Button Content="Button" Width="40" VerticalAlignment="Bottom" DockPanel.Dock="Bottom" Margin="0,0,0,20">
             <Button.Resources>
-                <Style TargetType="Border">
+                <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="3"/>
                 </Style>
             </Button.Resources>
         </Button>
-    </WrapPanel>
+    </DockPanel>
 </Window>
