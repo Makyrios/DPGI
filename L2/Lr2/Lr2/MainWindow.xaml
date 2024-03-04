@@ -5,27 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lr2"
         mc:Ignorable="d"
-        Title="TextEditor" Height="189" Width="432">
+        Title="TextEditor" Height="400" Width="500">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Border Grid.Row="0" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10"/>
-        <Border Grid.Row="1" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10"></Border>
-        <StackPanel Orientation="Horizontal" Grid.Row="0">
-            <Button Width="70" Height="70">
-                <Image Source="images/open_file_icon.png" ToolTip="Open file"/>
-            </Button>
-            <Button Width="70" Height="70">
-                <Image Source="images/clean_icon.png" ToolTip="Clean editor"/>
-            </Button>
-            <Button Width="70" Height="70">
-                <Image Source="images/copy_icon.png" ToolTip="Copy text"/>
-            </Button>
-            <Button Width="70" Height="70">
-                <Image Source="images/paste_icon.png" ToolTip="Paste text"/>
-            </Button>
-        </StackPanel>
+        
+        <Border Grid.Row="0" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10">
+            <StackPanel Orientation="Horizontal" Margin="3,0,0,0">
+                <Button Width="70" Height="70">
+                    <Image Source="images/open_file_icon.png" ToolTip="Open file"/>
+                </Button>
+                <Button Width="70" Height="70">
+                    <Image Source="images/clean_icon.png" ToolTip="Clean editor"/>
+                </Button>
+                <Button Width="70" Height="70">
+                    <Image Source="images/copy_icon.png" ToolTip="Copy text"/>
+                </Button>
+                <Button Width="70" Height="70">
+                    <Image Source="images/paste_icon.png" ToolTip="Paste text"/>
+                </Button>
+            </StackPanel>
+        </Border>
+        
+        <Border Grid.Row="1" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10" Margin="0,10,0,0">
+            <Grid Margin="15,10,15,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBox Grid.Row="0" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible"/>
+                <DockPanel Grid.Row="1" Margin="0,10,0,10">
+                    <Button Content="OK" DockPanel.Dock="Bottom" HorizontalAlignment="Center"/>
+                </DockPanel>
+            </Grid>
+        </Border>
     </Grid>
 </Window>
