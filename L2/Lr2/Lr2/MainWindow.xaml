@@ -6,13 +6,31 @@
         xmlns:local="clr-namespace:Lr2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="594">
-    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+    <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="410">
+        <Label Content="Label" HorizontalAlignment="Left"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
         <Label Content="Label" HorizontalAlignment="Center"/>
         <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
         <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
         <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
         <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
-        <Button Content="Button" Height="20" Width="266" Margin="0,50,0,0"/>
-
-    </StackPanel>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White"/>
+        <Button Content="Button" Margin="170,20,0,0">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </WrapPanel>
 </Window>
