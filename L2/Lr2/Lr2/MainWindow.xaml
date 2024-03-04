@@ -6,16 +6,15 @@
         xmlns:local="clr-namespace:Lr2"
         mc:Ignorable="d"
         Title="MainWindow" Height="189" Width="432">
-    <DockPanel VerticalAlignment="Center">
-        <Label Content="Label" Width="38" DockPanel.Dock="Top"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White" Width="170" Height="150"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Background="White" DockPanel.Dock="Right" Width="170" Height="150"/>
-        <Button Content="Button" Width="40" VerticalAlignment="Bottom" DockPanel.Dock="Bottom" Margin="0,0,0,20">
+    <Canvas Background="#FF5BDDFF">
+        <Label Content="Label" Canvas.Left="24" Canvas.Top="10"/>
+        <TextBox Text="text" Canvas.Left="43" Canvas.Top="31" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Content="button" Canvas.Left="60" Canvas.Top="48" RenderTransformOrigin="-0.05,0.553" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="3"/>
                 </Style>
             </Button.Resources>
         </Button>
-    </DockPanel>
+    </Canvas>
 </Window>
