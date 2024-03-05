@@ -21,13 +21,13 @@
         </Style>
     </Window.Resources>
 
-    <Grid Background="{StaticResource LinearPanelBrush}">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        
-        <Border Grid.Row="0" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10">
+
+        <Border Grid.Row="0" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10" Background="{StaticResource LinearPanelBrush}">
             <StackPanel Orientation="Horizontal" Margin="3,0,0,0">
                 <Button Width="70" Height="70">
                     <Image Source="images/open_file_icon.png" ToolTip="Open file"/>
@@ -43,8 +43,8 @@
                 </Button>
             </StackPanel>
         </Border>
-        
-        <Border Grid.Row="1" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10" Margin="0,10,0,0">
+
+        <Border Grid.Row="1" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10" Background="{StaticResource LinearPanelBrush}">
             <Grid Margin="15,10,15,0">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
