@@ -20,5 +20,16 @@ namespace Lr2
         {
             InitializeComponent();
         }
+
+        void canExecute_Save(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
+        }
+
+        void execute_Save(object sender, ExecutedRoutedEventArgs e)
+        {
+            MessageBox.Show("Save command triggered");
+        }
     }
+
 }
