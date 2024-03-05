@@ -9,14 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="images\clean_icon.png" />
     <None Remove="images\copy_icon.png" />
+    <None Remove="images\cut_icon.png" />
     <None Remove="images\open_file_icon.png" />
     <None Remove="images\paste_icon.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="images\clean_icon.png" />
+    <Resource Include="images\cut_icon.png" />
     <Resource Include="images\copy_icon.png" />
     <Resource Include="images\open_file_icon.png" />
     <Resource Include="images\paste_icon.png" />
