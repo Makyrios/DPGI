@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\Grid.png" />
+    <None Remove="images\O.png" />
+    <None Remove="images\X.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\Grid.png" />
+    <Resource Include="images\O.png" />
+    <Resource Include="images\X.png" />
+  </ItemGroup>
+
+</Project>
